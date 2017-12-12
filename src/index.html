@@ -5,16 +5,14 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <!-- animsition.css -->
-        <link rel="stylesheet" href="css/animsition.css">
         <link rel="stylesheet" href="css/style.css">
-        <script src="js/animsition.js"></script>
         <script src="js/main.js"></script>
         <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDW7ZGgdArV8d-CHOxT31HvvGpptpittWs&callback=initMap">
-    </script>     
+    </script>    
    </head>
 <body> 
+    <section class="pagefade" style="display: none">
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -32,7 +30,7 @@
           <div class="collapse navbar-collapse" id="myNavBar">            
             <!-- Right side elements -->
             <ul class="nav navbar-nav navbar-right nav-text">
-              <li class="active" class="animsition-link" data-animsition-out-class="fade"><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a></li>
+              <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a></li>
               <li><a href="articles.html" ><span class="glyphicon glyphicon-book" aria-hidden="true"></span> Articles</a></li>
               <li><a href="chat.html"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Chat</a></li>
               <li><a href="register.html"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Register</a></li>
@@ -93,8 +91,8 @@
                     <div class="col-sm-4 article">
                             <div class="col-sm-4 article"><p style="float: left;"><img src="thumbnail2.jpg" height="100px" width="100px"></p>
                             </div>
-                            <div class="col-sm-8 article">
-                                <p class="thumbnail-text"><h5><a href="#">Article 1</a></h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+                            <div class="col-sm-8 article animsition">
+                                <p class="thumbnail-text"><h5><a href="#" class="animsition-link">Article 1</a></h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
                             </div>
                     </div>
                 <div class="col-sm-4 article">
@@ -126,9 +124,11 @@
             </div>      
         </footer>
           <!-- footer end-->
-          
+       </section>    
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>     
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="pagefadejs/pagefade-min.js"></script>     
+       
 </body>
 </html>
             
