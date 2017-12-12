@@ -10,31 +10,63 @@
                 });
               }
 
-              $(document).ready(function() {
-                $(".animsition").animsition({
-                  inClass: 'fade-in',
-                  outClass: 'fade-out',
-                  inDuration: 1500,
-                  outDuration: 800,
-                  linkElement: '.animsition-link',
-                  // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
-                  loading: true,
-                  loadingParentElement: 'body', //animsition wrapper element
-                  loadingClass: 'animsition-loading',
-                  loadingInner: '', // e.g '<img src="loading.svg" />'
-                  timeout: false,
-                  timeoutCountdown: 5000,
-                  onLoadEvent: true,
-                  browser: [ 'animation-duration', '-webkit-animation-duration'],
-                  // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
-                  // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
-                  overlay : false,
-                  overlayClass : 'animsition-overlay-slide',
-                  overlayParentElement : 'body',
-                  transition: function(url){ window.location.href = url; }
-                });
-              });
+              function checkPass()
+              {
+                  //Store the password field objects into variables ...
+                  var pass1 = document.getElementById('pass1');
+                  var pass2 = document.getElementById('pass2');
+                  //Store the Confimation Message Object ...
+                  var message = document.getElementById('confirmMessage');
+                  //Set the colors we will be using ...
+                  var goodColor = "#66cc66";
+                  var badColor = "#ff6666";
+                  //Compare the values in the password field 
+                  //and the confirmation field
+                  if(pass1.value == pass2.value){
+                      //The passwords match. 
+                      //Set the color to the good color and inform
+                      //the user that they have entered the correct password 
+                      pass2.style.backgroundColor = goodColor;
+                      message.style.color = goodColor;
+                      message.innerHTML = "Passwords Match"
+                  }else{
+                      //The passwords do not match.
+                      //Set the color to the bad color and
+                      //notify the user.
+                      pass2.style.backgroundColor = badColor;
+                      message.style.color = badColor;
+                      message.innerHTML = "Passwords Do Not Match!"
+                  }
+              } 
 
+              // validates text only
+              function Validate(txt) {
+                  txt.value = txt.value.replace(/[^a-zA-Z0-9-'\n\r.]+/g, '');
+              }
+              // validate email
+              function email_validate(email)
+              {
+              var regMail = /^([_a-zA-Z0-9-]+)(\.[_a-zA-Z0-9-]+)*@([a-zA-Z0-9-]+\.)+([a-zA-Z]{2,3})$/;
               
+                  if(regMail.test(email) == false)
+                  {
+                  document.getElementById("status").innerHTML    = "<span class='warning'>Email address is not valid yet.</span>";
+                  }
+                  else
+                  {
+                  document.getElementById("status").innerHTML	= "<span class='valid'>Thanks, you have entered a valid Email address!</span>";	
+                  }
+              }
+
+              function validate_country()
+              {
+               var ddl = document.getElementById("countries");
+               var selectedValue = ddl.options[ddl.selectedIndex].value;
+                  if (selectedValue == "selectCountry")
+                 {
+                  document.getElementById("status").innerHTML	= "<span class='valid'>Please, select a country!</span>";
+                  return false;
+                 }
+              }
             
     

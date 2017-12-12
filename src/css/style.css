@@ -1,5 +1,11 @@
-  input.form-control {
-    
+@font-face { font-family: HelveticaNeue; src: url('HelveticaNeue.ttf') format('ttf'); } 
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('fonts/glyphicons-halflings-regular.eot');
+  src: url('fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('fonts/glyphicons-halflings-regular.woff') format('woff'), url('fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+}
+  
+  input.form-control {  
     height: 1.5em;
   }
   
@@ -10,6 +16,7 @@
 
   .nav-text {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
   }
 
   .navbar-collapse {
@@ -91,12 +98,17 @@ li.active {
   .article {
     padding-left: 0px;
     text-align: justify;
+    text-justify: inter-word;
     position: relative;
-    padding-right: 1px;
+    padding-right: 10px;
+  }
+
+  .register {
+    width: 300px;
   }
 
   .thumbnail-text {
     
-   margin-left: 5px; 
+   padding-right: 5px; 
   }
  

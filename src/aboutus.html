@@ -4,9 +4,7 @@
         <title>Amazing Website v1.0</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/style.css">
         <script src="js/main.js"></script>
         
@@ -26,7 +24,7 @@
               <span class="icon-bar"></span>
           </button>
           <!-- When menubar collapses, only the "brand" button and toggle will remain -->
-          <a class="navbar-brand" href="index.html"><img src="logo.png" alt="Amazing logo"></img></a> 
+          <a class="navbar-brand" href="index.html"><img src="dist/img/logo.png" alt="Amazing logo"></img></a> 
           </div>   
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="myNavBar">            
@@ -52,17 +50,20 @@
         </div>
         <!--End of Breadcrumb -->
 
-        <div class="container"><h3>About us </h3></div>
+        <div class="container">
+            <h3 style="font-variant: small-caps;"><strong>about us</strong></h3>
+        </div>
+
         <div id="exTab3" class="container">	
         <ul  class="nav nav-pills nav-justified">
                     <li class="active">
-                <a  href="#1b" data-toggle="tab">Overview</a>
+                <a  href="#1b" data-toggle="tab"><strong>Overview</strong></a>
                     </li>
-                    <li><a href="#2b" data-toggle="tab">Using nav-pills</a>
+                    <li><a href="#2b" data-toggle="tab"><strong>Using nav-pills</strong></a>
                     </li>
-                    <li><a href="#3b" data-toggle="tab">Applying clearfix</a>
+                    <li><a href="#3b" data-toggle="tab"><strong>Applying clearfix</strong></a>
                     </li>
-                  <li><a href="#4a" data-toggle="tab">Background color</a>
+                  <li><a href="#4a" data-toggle="tab"><strong>Background color</strong></a>
                     </li>
                 </ul>
         
@@ -74,7 +75,7 @@
                 aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
                 voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
                 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
-                deserunt mollit anim id est laborum.</p><br><br>
+                deserunt mollit anim id est laborum.</p><br><br><br>
                         </div>
                         <div class="tab-pane" id="2b">
                                 <p><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -82,14 +83,14 @@
                                     aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
                                     voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
                                     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
-                                    deserunt mollit anim id est laborum.</p><br><br>
+                                    deserunt mollit anim id est laborum.</p><br><br><br>
                         </div>
                 <div class="tab-pane" id="3b">
                         <p><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                             Ut enimesse cillum dolore eu fugiat nulla pariatur. 
                             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
-                            deserunt mollit anim id est laborum.</p><br><br>
+                            deserunt mollit anim id est laborum.</p><br><br><br>
                         </div>
                   <div class="tab-pane" id="4b">
                         <p><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -99,26 +100,33 @@
                             voluptate velit esse  cillum dolore eu fugiat nulla pariatur. 
                             Excepteur sint occ cillum dolore eu fugiat nulla pariatur. 
                             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
-                            deserunt mollit anim id est laborum.</p><br><br>
+                            deserunt mollit anim id est laborum.</p><br><br><br>
                         </div>
                     </div>
           </div>
 
-          <div class="container"><h3>Contacts</h3>
-        </div>
+          <div class="container">
+                <h3 style="font-variant: small-caps;"><strong>contacts</strong></h3>
+            </div>
 
           <div class="container">
           <div class="row">
-            <div class="col" id="map">
+            <div class="col-sm-6" id="map">
             </div>
-            <div class="col">
+            <div class="col-sm-6">
+                <h4>Address:</h4>
+                <p>Pils laukums 3, Rīga, LV-1050, Latvia</p>
+                <h4>Email:</h4>
+                <p>info@amazingwebsite.com</p>
+                <h4>Phone:</h4>
+                <p>+371 2606060</p>
             </div>
           </div>
           </div>
         
           
-      <!-- Footer Start -->
-      <footer>
+        <!-- Footer Start -->
+        <footer>
             <div class="container">
                 <div class="row">
                     <div>
@@ -127,19 +135,14 @@
                 </div>
             </div>
             
-          </footer>
-          <!-- footer end-->
+        </footer>
+        <!-- footer end-->
         
           <!-- Bootstrap core JavaScript -->
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>    
-          
-          <script async defer
-          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDW7ZGgdArV8d-CHOxT31HvvGpptpittWs&callback=initMap">
-          </script>  
-            
-       
+          <script src="js/jquery-3.2.1.min.js"></script>
+          <script src="js/bootstrap.min.js"></script>    
+          <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDW7ZGgdArV8d-CHOxT31HvvGpptpittWs&callback=initMap"></script>
+          <script src="js/main.js"></script>   
 </body>
-
 </html>
             

@@ -4,12 +4,9 @@
         <title>Amazing Website v1.0</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/style.css">
-        <script src="js/main.js"></script>
-        <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDW7ZGgdArV8d-CHOxT31HvvGpptpittWs&callback=initMap">
-    </script>    
+        <script src="js/main.js"></script> 
    </head>
 <body> 
     <section class="pagefade" style="display: none">
@@ -24,7 +21,7 @@
               <span class="icon-bar"></span>
           </button>
           <!-- When menubar collapses, only the "brand" button and toggle will remain -->
-          <a class="navbar-brand" href="index.html"><img src="logo.png" alt="Amazing logo"></img></a> 
+          <a class="navbar-brand" href="index.html"><img src="dist/img/logo.png" alt="Amazing logo"></img></a> 
           </div>   
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="myNavBar">            
@@ -56,15 +53,15 @@
               <!-- Wrapper for slides -->
               <div class="carousel-inner">
                 <div class="item active">
-                  <img src="la.jpg" alt="Los Angeles" style="width:100%;">
+                  <img src="dist/img/la.jpg" alt="Los Angeles" style="width:100%;">
                 </div>
           
                 <div class="item">
-                  <img src="chicago.jpg" alt="Chicago" style="width:100%;">
+                  <img src="dist/img/chicago.jpg" alt="Chicago" style="width:100%;">
                 </div>
               
                 <div class="item">
-                  <img src="ny.jpg" alt="New york" style="width:100%;">
+                  <img src="dist/img/ny.jpg" alt="New york" style="width:100%;">
                 </div>
               </div>
           
@@ -82,31 +79,34 @@
           <!-- Slider ends  -->
 
           <!-- Articles -->
-          <div class="container">
-              <h3>3 Most Recent Articles</h3>
+          <div class="container" style="padding-bottom: 10px;">
+              <h3 style="font-variant: small-caps;"><strong>most recent articles</strong></h3>
           </div>
 
           <div class="container">
             <div class="row text-center">
-                    <div class="col-sm-4 article">
-                            <div class="col-sm-4 article"><p style="float: left;"><img src="thumbnail2.jpg" height="100px" width="100px"></p>
-                            </div>
-                            <div class="col-sm-8 article animsition">
-                                <p class="thumbnail-text"><h5><a href="#" class="animsition-link">Article 1</a></h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
-                            </div>
-                    </div>
                 <div class="col-sm-4 article">
-                        <div class="col-sm-4 article"><p style="float: left;"><img src="thumbnail2.jpg" height="100px" width="100px"></p>
+                    <div class="col-sm-4 article"><p style="float: left;"><img src="dist/img/thumbnail2.jpg" height="100px" width="100px"></p>
+                    </div>
+                    <div class="col-sm-8 article">
+                        <p class="thumbnail-text"><a href="#"><strong>Article 1</strong></a><br>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad...</p>
+                </div>
+                </div>
+                <div class="col-sm-4 article">
+                        <div class="col-sm-4 article"><p style="float: left;"><img src="dist/img/thumbnail2.jpg" height="100px" width="100px"></p>
                         </div>
                         <div class="col-sm-8 article">
-                            <p class="thumbnail-text"><h5><a href="#">Article 2</a></h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+                            <p class="thumbnail-text"><a href="#"><strong>Article 2</strong></a><br>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad...</p>
                     </div>
                     </div>
                     <div class="col-sm-4 article">
-                            <div class="col-sm-4 article"><p style="float: left;"><img src="thumbnail2.jpg" height="100px" width="100px"></p>
+                            <div class="col-sm-4 article"><p style="float: left;"><img src="dist/img/thumbnail2.jpg" height="100px" width="100px"></p>
                             </div>
                             <div class="col-sm-8 article">
-                                <p class="thumbnail-text"><h5><a href="#">Article 3</a></h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+                                <p class="thumbnail-text"><a href="#"><strong>Article 3</strong></a><br>
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad...</p>
                         </div>
                         </div>
             </div>
@@ -125,10 +125,10 @@
         </footer>
           <!-- footer end-->
        </section>    
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-      <script src="pagefadejs/pagefade-min.js"></script>     
-       
+       <script src="js/jquery-3.2.1.min.js"></script>
+       <script src="js/bootstrap.min.js"></script>
+       <script src="pagefadejs/pagefade-min.js"></script>
+                  
 </body>
 </html>
             
