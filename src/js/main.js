@@ -68,5 +68,12 @@
                   return false;
                  }
               }
+
+              function setup()
+              {
+              var text1 = document.getElementById("comment").value;
+              var username = document.getElementById("username").value;
+              document.getElementById("output").innerHTML +=username+": "+"<br>" +"<p>"+text1 +"</p>";
+              }
             
     
